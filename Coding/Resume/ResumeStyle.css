@@ -514,7 +514,7 @@
 .profile-container-rect::after {
   content: '';
   position: absolute;
-  
+
   top: -20px; left: -20px; right: -20px; bottom: -20px;
   background: radial-gradient(circle, var(--soft-glow) 0%, transparent 75%);
   z-index: 0;
@@ -558,4 +558,8 @@
   50% { transform: translate(100px, 50px); }
   100% { transform: translate(0, 0); }
 }
+
+/* /////////// */
+
+
 
