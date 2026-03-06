@@ -49,8 +49,17 @@
 
     <!-- PAGE 1: HOME -->
     <section id="landing-page" class="page enter">
+      <!-- Background Particles -->
+      <div class="particles-container">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+      </div>
+
       <div class="hero-wrapper">
-        <!-- LEFT SIDE: Image -->
+        <!-- LEFT SIDE: Image + Badges -->
         <div class="profile-container-rect">
           <img
             src="./img/pra.jpg"
@@ -58,11 +67,17 @@
             class="profile-img-rect"
           />
           <div class="frame-accent"></div>
+
+          <!-- Floating Status Badges -->
+          <!-- <div class="floating-badge badge-1">Sr QA</div> -->
+          <div class="floating-badge badge-2">8+ Yrs Exp</div>
         </div>
 
         <!-- RIGHT SIDE: Text Content -->
         <div class="hero-content">
-          <h1 class="hello-text">Senior Quality Assurance Engineer</h1>
+          <h1 class="hello-text shine-effect">
+            Senior Quality Assurance Engineer
+          </h1>
           <div class="typewriter-container">
             <p class="tp-line line-1">
               Specializing in end-to-end QA lifecycles and CI/CD integration.
@@ -262,6 +277,5 @@
       document.getElementById("backToSkills").onclick = () =>
         navigate("skills-page");
     </script>
-    
   </body>
 </html>
