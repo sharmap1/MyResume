@@ -49,20 +49,36 @@
 
     <!-- PAGE 1: HOME -->
     <section id="landing-page" class="page enter">
-      <h1 class="hello-text">Senior Quality Assurance Engineer</h1>
-      <p
-        style="
-          color: #94a3b8;
-          text-align: center;
-          max-width: 600px;
-          line-height: 1.6;
-        "
-      >
-        Specializing in end-to-end QA lifecycles and CI/CD orchestration. Deep
-        expertise in validating SAP Commerce (Hybris) and Azure ecosystems.
-      </p>
-      <button class="btn" id="toSkills">EXPLORE EXPERTISE</button>
+      <div class="hero-wrapper">
+        <!-- LEFT SIDE: Image -->
+        <div class="profile-container-rect">
+          <img
+            src="./img/pra.jpg"
+            alt="Prasamsha Sharma"
+            class="profile-img-rect"
+          />
+          <div class="frame-accent"></div>
+        </div>
+
+        <!-- RIGHT SIDE: Text Content -->
+        <div class="hero-content">
+          <h1 class="hello-text">Senior Quality Assurance Engineer</h1>
+          <div class="typewriter-container">
+            <p class="tp-line line-1">
+              Specializing in end-to-end QA lifecycles and CI/CD integration.
+            </p>
+            <p class="tp-line line-2">
+              Deep expertise in validating SAP Commerce (Hybris) and Azure
+              ecosystems.
+            </p>
+          </div>
+          <div class="hero-actions">
+            <button class="btn" id="toSkills">EXPLORE EXPERTISE</button>
+          </div>
+        </div>
+      </div>
     </section>
+
     <!-- PAGE 2: SKILLS -->
     <section id="skills-page" class="page">
       <h2 class="hello-text">Technical Expertise</h2>
@@ -246,5 +262,6 @@
       document.getElementById("backToSkills").onclick = () =>
         navigate("skills-page");
     </script>
+    
   </body>
 </html>
