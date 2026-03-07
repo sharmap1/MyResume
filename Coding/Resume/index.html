@@ -10,7 +10,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     />
-    <link rel="stylesheet" href="ResumeStyle.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <div class="mesh-bg"></div>
@@ -62,7 +62,7 @@
         <!-- LEFT SIDE: Image + Badges -->
         <div class="profile-container-rect">
           <img
-            src="./img/pra.jpg"
+            src="./assets/images/pra.jpg"
             alt="Prasamsha Sharma"
             class="profile-img-rect"
           />
@@ -127,6 +127,7 @@
               ><span class="tag">PuTTY / WinSCP</span>
             </div>
           </div>
+
           <div class="skill-category">
             <h3>Web & API Testing</h3>
             <div class="tag-container">
@@ -188,16 +189,19 @@
               from managing Build Definitions and Release Management to ensuring
               code quality through strict Gated Check-ins.
             </li>
+            <br />
             <li>
               Experienced in repository deployments through Azure DevOps (ADO),
               actively monitoring machine health and system performance to
               ensure every release is stable and successful.
             </li>
+            <br />
             <li>
               Expert at data visualization and reporting, specialized in
               building high-level KPI dashboards that track weekly progress and
               system performance at a glance.
             </li>
+            <br />
           </ul>
         </div>
         <div class="exp-card">
@@ -208,6 +212,7 @@
               Skilled in auditing Web Services and XML data integrity using
               SoapUI to ensure reliable system-to-system communication
             </li>
+            <br />
             <li>
               Experienced in using JIRA to streamline defect tracking, working
               closely with developers to identify root causes and maintain a
@@ -243,43 +248,6 @@
       <button class="btn" id="backToSkills">BACK TO SKILLS</button>
     </section>
 
-    <script>
-      const loader = document.getElementById("loader-overlay");
-      const pBar = document.getElementById("p-bar");
-
-      function navigate(toId) {
-        loader.style.display = "flex";
-        let w = 0;
-        const interval = setInterval(() => {
-          w += 25;
-          pBar.style.width = w + "%";
-          if (w >= 100) {
-            clearInterval(interval);
-            setTimeout(() => {
-              loader.style.display = "none";
-              pBar.style.width = "0%";
-              document.querySelectorAll(".page").forEach((p) => {
-                p.classList.remove("enter");
-                p.style.display = "none";
-              });
-              const target = document.getElementById(toId);
-              target.style.display = "flex";
-              setTimeout(() => target.classList.add("enter"), 50);
-            }, 300);
-          }
-        }, 60);
-      }
-
-      document.getElementById("toSkills").onclick = () =>
-        navigate("skills-page");
-      document.getElementById("toExp").onclick = () => navigate("exp-page");
-      document.getElementById("backToHome").onclick = () =>
-        navigate("landing-page");
-      document.getElementById("backToSkills").onclick = () =>
-        navigate("skills-page");
-    </script>
-    <!-- ////// -->
-
-    <!-- //////////// -->
+    <script type="module" src="./assets/js/main.js"></script>
   </body>
 </html>

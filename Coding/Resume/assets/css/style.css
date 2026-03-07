@@ -64,7 +64,7 @@
         display: flex;
         align-items: center;
         gap: 20px;
-        font-size: 0.75rem;
+        font-size: 1rem;
         color: #94a3b8;
       }
       .nav-contact-group a {
@@ -154,7 +154,7 @@
         background: var(--glass);
         border: 1px solid var(--border);
         border-radius: 24px;
-        padding: 40px;
+        padding: 60px;
         backdrop-filter: blur(20px);
         max-width: 1250px;
         width: 100%;
@@ -167,7 +167,7 @@
       }
 
       .skill-category {
-        background: rgba(255, 255, 255, 0.02);
+        background: rgba(161, 184, 219, 0.02);
         border: 1px solid var(--border);
         padding: 20px;
         border-radius: 16px;
@@ -178,26 +178,26 @@
         transform: translateY(-5px);
       }
       .skill-category h3 {
-        font-size: 0.7rem;
+        font-size: 0.85rem;
         color: var(--accent);
         text-transform: uppercase;
         letter-spacing: 1.5px;
         margin-bottom: 15px;
         border-bottom: 1px solid var(--border);
-        padding-bottom: 8px;
+        padding-bottom: 18px;
       }
 
       .tag-container {
         display: flex;
         flex-wrap: wrap;
-        gap: 6px;
+        gap: 16px;
       }
       .tag {
         background: rgba(255, 255, 255, 0.05);
         border: 1px solid var(--border);
         padding: 4px 10px;
         border-radius: 6px;
-        font-size: 0.7rem;
+        font-size: 0.8rem;
         color: #e2e8f0;
       }
 
@@ -230,13 +230,13 @@
       }
       .exp-meta {
         color: var(--accent);
-        font-size: 0.9rem;
+        font-size: 1rem;
         margin-bottom: 15px;
       }
       .exp-card ul {
         padding-left: 20px;
         color: #94a3b8;
-        font-size: 0.85rem;
+        font-size: 0.9.5rem;
         line-height: 1.6;
       }
 
@@ -314,7 +314,7 @@
 .tp-line {
   color: #94a3b8;
   font-family: "Courier New", Courier, monospace; /* Required for perfect step alignment */
-  font-size: 1rem;
+  font-size: 1.25rem;
   line-height: 1.6;
   white-space: nowrap;
   overflow: hidden;
@@ -495,7 +495,7 @@
   border: 1px solid var(--border);
   padding: 8px 14px;
   border-radius: 12px;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   color: var(--accent);
   font-weight: 600;
   z-index: 10;
@@ -559,7 +559,18 @@
   100% { transform: translate(0, 0); }
 }
 
-/* /////////// */
+
+canvas#smoke-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1; 
+  pointer-events: none; /* Allows you to still click buttons through the smoke */
+}
+.page {
+  position: relative;
+  z-index: 2; 
+}
 
 
 
